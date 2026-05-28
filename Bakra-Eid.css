@@ -1,0 +1,122 @@
+* {
+      margin: 0;
+        padding: 0;
+          box-sizing: border-box;
+          }
+
+          body {
+            font-family: 'Segoe UI', sans-serif;
+              background-color: #ffffff;
+                color: #1a1a1a;
+                }
+
+                /* Base screen layout template */
+                .page {
+                  position: relative;
+                    width: 100%;
+                      height: 100vh;
+                        overflow: hidden;
+                          display: flex;
+                            justify-content: center;
+                              align-items: center;
+                              }
+
+                              /* Background video properties */
+                              #goat {
+                                position: absolute;
+                                  top: 0;
+                                    left: 0;
+                                      width: 100%;
+                                        height: 100%;
+                                          object-fit: cover;
+                                            z-index: 1;
+                                            }
+
+                                            /* The wrapper holding multiple text segments */
+                                            #page1-text-wrapper {
+                                              position: absolute;
+                                                display: flex;
+                                                  flex-direction: column;
+                                                    align-items: center;
+                                                      gap: 40vh; /* Spaces out text frames vertically so they don't overlap */
+                                                        width: 80%;
+                                                          max-width: 800px;
+                                                            text-align: center;
+                                                              z-index: 2;
+                                                                top: 50%; /* Starts positioned relative to the center */
+                                                                  transform: translateY(0%);
+                                                                  }
+
+                                                                  .page2{
+                                                                    height: 500px;
+                                                                    width: 100%;
+                                                                  }
+
+                                                                  /* Individual text structures styling */
+                                                                  .intro-message h1 {
+                                                                    font-size: 4rem;
+                                                                      color: #d4af37 ;
+                                                                        text-transform: uppercase;
+                                                                          margin-bottom: 15px;
+                                                                            font-weight: 800;
+                                                                            }
+
+                                                                            .intro-message p {
+                                                                              font-size: 1.5rem;
+                                                                                color: #000000;
+                                                                                }
+
+                                                                                /* Page 2: Normal styling defaults */
+                                                                                .standard-page {
+                                                                                  background-color: #fafafa;
+                                                                                    display: flex;
+                                                                                      justify-content: center;
+                                                                                        align-items: center;
+                                                                                        }
+
+                                                                                        .static-content {
+                                                                                          text-align: center;
+                                                                                            max-width: 600px;
+                                                                                            }
+
+                                                                                            .static-content h2 {
+                                                                                            
+                                                                                              font-size: 3rem;
+                                                                                                color: #146321;
+                                                                                                  margin-bottom: 20px;
+                                                                                                  margin-top: 50px;
+                                                                                                  }
+                                                                                                   .static-content p {
+                                                                                                    font-weight: 200;
+                                                                                                   }
+                                                                                                   h3{
+                                                                                                  align-items: center;
+                                                                                                   }
+                                                                                                   #color{
+                                                                                                    background-color: #ffffff;
+                                                                                                    color:#f86939 ;
+                                                                                                   }
+
+                                                                                                   /* body {
+                                                                                                      background-color: #051611; /* A dark background makes the glow look 10x better! */
+                                                                                                        /* display: flex; */
+                                                                                                          /* justify-content: center;
+                                                                                                            align-items: center;
+                                                                                                              height: 100vh;
+                                                                                                                margin: 0;
+                                                                                                                /* } */ 
+
+                                                                                                                /* .glow-text {
+                                                                                                                  font-family: 'Segoe UI', sans-serif;
+                                                                                                                    font-size: 4rem;
+                                                                                                                      font-weight: 900;
+                                                                                                                        color: #ffffff; /* Base text color (bright core) */
+                                                                                                                          
+                                                                                                                            /* The Magic Code: Stacking multiple text shadows */
+                                                                                                                              /* text-shadow:  */
+                                                                                                                                  /* 0 0 5px #fffc,        Sharp white interior glow */
+                                                                                                                                      /* 0 0 10px #114232,     Small emerald halo */
+                                                                                                                                          /* 0 0 20px #114232,     Medium emerald flare */
+                                                                                                                                              /* 0 0 40px #D4AF37,     Large outer gold flare */
+                                                                                                                                                  /* 0 0 80px #D4AF37;     Massive ambient gold background glow */
+                                                                                                                /* } */
